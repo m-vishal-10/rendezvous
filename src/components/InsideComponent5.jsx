@@ -8,17 +8,24 @@ const InsideComponent5 = () => {
         {/* <h1 className="event-title">BGMI Tournament</h1> */}
         <div className="flex justify-center items-center h-screen">
           <h2 class="img-effect">
-          <a href="https://fontmeme.com/squid-game-font/"> 
-            <img
-              src="https://fontmeme.com/permalink/250215/69c3d65c4d96ffdb49ecefad86a33ec8.png"
-              alt="squid-game-font"
-              style={{ border: 0 }}
-            />
-          </a>
+            <a
+              href="https://fontmeme.com/squid-game-font/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://fontmeme.com/permalink/250215/2f7604c26bd8a8e135cdff843dd2379b.png"
+                alt="squid-game-font"
+                style={{ border: "0" }}
+              />
+            </a>
           </h2>
         </div>
         <p className="event-description">
-          page5
+          Step into the world of cricket management with the IPL Mock Auction!
+          Assemble your dream team by bidding on players, balancing your budget,
+          and outwitting your opponents. The stakes are high, and only the best
+          strategist will claim victory. Are you ready to take on the challenge?
         </p>
       </div>
 
@@ -26,26 +33,13 @@ const InsideComponent5 = () => {
         {/* Event Details Card */}
         <div className="card">
           <h2 className="card-title">Event Details</h2>
-          <ul className="event-details">
-            <li>
-              <span className="highlight">Prelims:</span> 19th Feb (6pm - 9pm)
-            </li>
-            <li>
-              <span className="highlight">Finals:</span> 22nd Feb
-            </li>
-            <li>
-              <span className="highlight">Venue:</span> Computer Center
-            </li>
-            <li>
-              <span className="highlight">Team Size:</span> Two members per team
-            </li>
-          </ul>
+          <p>To be Announced.....</p>
         </div>
 
         {/* Image Card */}
-        <div className="card">
-          <h2 className="card-title">BGMI IMAGE</h2>
-          <img src="...." alt="BGMI Tournament" className="event-image" />
+        <div className="card event-poster">
+          {/* <h2 className="card-title">IPL Auction</h2> */}
+          {/* <img src="https://res.cloudinary.com/dgpoevb0p/image/upload/v1739609419/azootigwgmt7bfsskizb.jpg" alt="BGMI Tournament" className="event-image event-post" /> */}
         </div>
 
         {/* Competition Rounds Card */}
@@ -53,20 +47,27 @@ const InsideComponent5 = () => {
           <h2 className="card-title">Competition Rounds</h2>
           <ul className="competition-rules">
             <li>
-              <span className="highlight">Round 1 - Online Prelims:</span> Duo
-              Classic on Erangel & Miramar
+              <span className="highlight">Round 1 - Online Prelims:</span>
+              <p>
+                A 25-question IPL Quiz with a 30-minute time limit. The top 10
+                teams will qualify for the next round.
+              </p>
             </li>
-            <li>
+            {/* <li>
               <span className="highlight">Platform:</span> Mobile only
               (Android/iOS)
             </li>
-            <li>No cheating, hacking, or third-party software allowed</li>
+            <li>No cheating, hacking, or third-party software allowed</li> */}
             <li>
-              <span className="highlight">Round 2 - Finals (Offline):</span> TDM
-              Clash with 10 qualified teams
+              <span className="highlight">
+                Round 2 - Team Selection & Auction:
+              </span>
+              <p>
+                Each team will randomly select an IPL franchise. Teams will then
+                build a squad of 11 players, consisting of 4 foreign players and
+                7 Indian players. Budget: ₹70 crores.
+              </p>
             </li>
-            <li>Only M416 is allowed; no pistols, slides off</li>
-            <li>Fair play and adherence to BGMI's Terms of Service required</li>
           </ul>
         </div>
       </div>
