@@ -34,13 +34,13 @@ const Events = () => {
 
   const nonTechnicalEvents = [
     {
-      title: "Mind Games",
-      description: "Test your strategic thinking and problem-solving skills in this battle of wits.",
+      title: "Ipl Auction",
+      description: "Test your konwledge about the palyers and strategy.",
       image: "/api/placeholder/400/300",
       navigatePath:"/inside5"
     },
     {
-      title: "Cultural Chaos",
+      title: "Clash Of Clans",
       description: "Showcase your talents in music, dance, and art with a competitive edge.",
       image: "/api/placeholder/400/300",
       navigatePath:"/inside6"

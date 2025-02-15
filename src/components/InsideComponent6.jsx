@@ -8,18 +8,20 @@ const InsideComponent6 = () => {
         {/* <h1 className="event-title">BGMI Tournament</h1> */}
         <div className="flex justify-center items-center h-screen">
           <h2 class="img-effect">
-          <a href="https://fontmeme.com/squid-game-font/"> 
-            <img
-              src="https://fontmeme.com/permalink/250215/69c3d65c4d96ffdb49ecefad86a33ec8.png"
-              alt="squid-game-font"
-              style={{ border: 0 }}
-            />
-          </a>
+            <a
+              href="https://fontmeme.com/squid-game-font/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://fontmeme.com/permalink/250215/0a5b7cb57a8b1d450305a3e037da3b75.png"
+                alt="squid-game-font"
+                border="0"
+              />
+            </a>
           </h2>
         </div>
-        <p className="event-description">
-          page6
-        </p>
+        <p className="event-description">page6</p>
       </div>
 
       <div className="cards-container">
