@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
-
+import { useNavigate } from "react-router-dom";
+import Events from "../pages/Events";
 const Themes = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const cards = document.querySelectorAll(".event-card");
     cards.forEach((card, index) => {
@@ -13,7 +15,7 @@ const Themes = () => {
       }, index * 300);
     });
   }, []);
-
+  
   return (
     <div style={styles.container}>
       <div style={styles.cardContainer}>
@@ -28,7 +30,7 @@ const Themes = () => {
             <p style={styles.cardText}>
               Enter the arena of coding challenges, hackathons, and technical warfare
             </p>
-            <button style={styles.button} onClick={() => showDetails("technical")}>
+            <button style={styles.button} onClick={() => navigate("/events")}>
               Know More
             </button>
           </div>
@@ -45,7 +47,7 @@ const Themes = () => {
             <p style={styles.cardText}>
               Survive the games of strategy, culture, and creative challenges
             </p>
-            <button style={styles.button} onClick={() => showDetails("non-technical")}>
+            <button style={styles.button} onClick={() => navigate("/events")}>
               Know More
             </button>
           </div>
@@ -76,7 +78,7 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    gap: "20px",
+    gap: "40px",
   },
   eventCard: {
     background: "linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%)",
@@ -85,7 +87,8 @@ const styles = {
     transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
     overflow: "hidden",
     boxShadow: "0 0 10px rgb(255, 255, 255)",
-    width: "350px",
+    width: "500px",
+    height: "400px",
     textAlign: "center",
     padding: "20px",
   },
@@ -119,7 +122,10 @@ const styles = {
     cursor: "pointer",
     borderRadius: "5px",
     transition: "background 0.3s",
-  },
+    zIndex: 10, // Ensure the button is on top of other elements
+    position: "relative", // Add position relative to ensure z-index works
+  }
+  ,
 };
 
 export default Themes;
