@@ -37,7 +37,6 @@ const Footer = () => {
 
             <h4 style={styles.subheading}>Faculty Coordinators</h4>
             <p style={styles.text}>Dr.A. GNANASEKAR - 9884125520</p>
-            <p style={styles.text}>Dr.S.BALAJI - 9176982281</p>
 
             <h4 style={styles.subheading}>Student Committee</h4>
             <p style={styles.text}>SASI KARAN - 9150581968</p>

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    background-color: #000;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    }
+
+    .img-effect {
+        text-shadow: 2px 2px red;
+    }
+    
+    .event-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    }
+    
+    .event-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    }
+    
+    .event-title {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    letter-spacing: 4px;
+    /* text-shadow: 0 0 10px rgb(255, 255, 255), */
+    }
+    
+    .event-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    /* Added padding to prevent cut-off of hover effect */
+    }
+    
+    .card {
+    background: linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%);
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    height: 100%;
+    position: relative;
+    /* Added position relative */
+    top: 0;
+    /* Initial position */
+    transition: all 0.3s ease-out;
+    /* Smoother transition */
+    will-change: transform, box-shadow;
+    /* Optimize performance */
+    }
+    
+    .card:hover {
+    top: -30px;
+    /* Move up using top instead of transform */
+    box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.3),
+    0 0 60px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    /* Added cursor pointer */
+    }
+    
+    .card-title {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    
+    .event-details li,
+    .competition-rules li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    }
+    
+    .event-details li::before,
+    .competition-rules li::before {
+    content: '○';
+    position: absolute;
+    left: 0;
+    color: #fff;
+    }
+    
+    .event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    }
+    
+    .highlight {
+    color: #fff;
+    font-weight: bold;
+    }
+    
+    @media (max-width: 1024px) {
+    .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    
+    @media (max-width: 768px) {
+    .event-title {
+    font-size: 2.5rem;
+    }
+    
+    .event-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+    }
+    
+    .cards-container {
+    grid-template-columns: 1fr;
+    }
+    
+    .card {
+    margin-bottom: 1rem;
+    }
+    }
