@@ -4,28 +4,23 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <div style={styles.container}>
-        <div style={styles.grid}>
-          
+        <div style={styles.grid} className="grid">
           {/* Column 1: College Info */}
           <div>
             <h4 style={styles.heading}>RMD Engineering College</h4>
-            <p style={styles.text}>
-            RMD College Rd, Kavaraipettai, Tamil Nadu 601206
-            </p>
-            <p style={styles.text}>
-              📞 +044-3330 3030 
-            </p>
+            <p style={styles.text}>RMD College Rd, Kavaraipettai, Tamil Nadu 601206</p>
+            <p style={styles.text}>📞 +044-3330 3030</p>
           </div>
 
           {/* Column 2: Social Media */}
           <div>
             <h4 style={styles.heading}>Follow Us On</h4>
-            <a 
-              href="https://www.instagram.com/rendezvous2k25?igsh=MTdzazZiY25tbHBuNg==" 
-              target="_blank" 
+            <a
+              href="https://www.instagram.com/rendezvous2k25?igsh=MTdzazZiY25tbHBuNg=="
+              target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/public/Instagram.png" alt="Instagram" style={styles.icon} />
+              <img src="/Instagram.png" alt="Instagram" style={styles.icon} />
             </a>
             <p style={styles.text}>© 2025 RMD</p>
           </div>
@@ -40,9 +35,9 @@ const Footer = () => {
 
             <h4 style={styles.subheading}>Student Committee</h4>
             <p style={styles.text}>SASI KARAN - 9150581968</p>
-            <p style={styles.text}>CHRISTOPHER - 9710815558</p> 
-            <p style={styles.text}>SIDDARTH - 9677961130</p> 
-            <p style={styles.text}>PRIYADHARSHINI - 9150199282</p> 
+            <p style={styles.text}>CHRISTOPHER - 9710815558</p>
+            <p style={styles.text}>SIDDARTH - 9677961130</p>
+            <p style={styles.text}>PRIYADHARSHINI - 9150199282</p>
           </div>
 
           {/* Column 4: Google Maps */}
@@ -58,9 +53,25 @@ const Footer = () => {
               ></iframe>
             </div>
           </div>
-
         </div>
       </div>
+
+      {/* Responsive CSS */}
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .grid {
+              grid-template-columns: repeat(2, 1fr) !important; /* 2 columns per row */
+            }
+          }
+
+          @media (max-width: 480px) {
+            .grid {
+              grid-template-columns: repeat(1, 1fr) !important; /* 1 column per row */
+            }
+          }
+        `}
+      </style>
     </footer>
   );
 };
@@ -81,7 +92,7 @@ const styles = {
   },
   grid: {
     display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)", // 4 equal columns
+    gridTemplateColumns: "repeat(4, 1fr)", // Default: 4 columns
     gap: "20px",
     alignItems: "flex-start",
   },

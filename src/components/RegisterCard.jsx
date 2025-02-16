@@ -1,5 +1,4 @@
 import React from "react";
-import Register from "../pages/Register";
 import { useNavigate } from "react-router-dom";
 
 const RegisterCard = () => {

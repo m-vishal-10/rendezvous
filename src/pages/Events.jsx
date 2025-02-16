@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-
+import '../Events.css';
 const Events = () => {
   const navigate = useNavigate();
 
@@ -8,58 +8,54 @@ const Events = () => {
     {
       title: "Paper Presentation",
       description: "Showcase your research and innovation at the Paper Presentation Challenge! Present groundbreaking ideas, cutting-edge solutions, or revolutionary technologies to an esteemed panel of judges.",
-      video: "/public/Paperpresentation.mp4",
+      video: "/Paperpresentation.mp4", // Updated path
       navigatePath: "/inside",
     },
     {
       title: "Battle of Coders",
       description: "Battle it out in an intense coding competition where only the strongest algorithms survive.",
-        video: "/public/battleofcoders.mp4",
+      video: "/battleofcoders.mp4", // Updated path
       navigatePath: "/inside2",
     },
     {
       title: "Shark Tank",
       description: "Shark Tank is a high-stakes event where participants pitch unique products to a panel of 'investors.' It tests quick thinking, creativity, and entrepreneurial flair.",
-      video: "/public/sharktank.mp4",
+      video: "/244006_medium.mp4", // Updated path
       navigatePath: "/inside3",
     },
     {
       title: "Pixel Playground (UI)",
       description: "Pixel Playground is a design competition challenging your skills in logo creation and UI/UX design. Test your creativity, problem-solving, and speed to create stunning visuals!",
-      video: "/public/pixelplayground.mp4",
+      video: "/pixelplayground.mp4", // Updated path
       navigatePath: "/inside4",
     },
   ];
-  
+
   const nonTechnicalEvents = [
     {
       title: "IPL Auction",
       description: "Enter the IPL Mock Auction, where you bid on players, balance your budget, and outsmart rivals. Only the best strategist will emerge victorious!",
-      video: "/public/ipl.mp4",
+      video: "/ipl.mp4", // Updated path
       navigatePath: "/inside5",
     },
     {
       title: "Clash Of Clans",
       description: "Test your gaming knowledge and strategy by identifying characters from games, cartoons, and anime. Lead your Clash of Clans clan in battles, judged on attack execution and defense!",
-      video: "/public/Clash of Clans.mp4",
+      video: "/Clash of Clans.mp4", // Updated path
       navigatePath: "/inside6",
     },
   ];
-  
-
-  const showEventDetails = (eventTitle) => {
-    alert(`Welcome to ${eventTitle}! Are you ready to play?`);
-  };
 
   const createEventCard = (event) => {
     return (
-      <div style={styles.eventCard}>
+      <div style={styles.eventCard} key={event.title}>
         <video
           autoPlay
           loop
           muted
           playsInline
           style={styles.videoBackground}
+          aria-label={`Background video for ${event.title}`} // Accessibility
         >
           <source src={event.video} type="video/mp4" />
           Your browser does not support the video tag.
@@ -74,23 +70,17 @@ const Events = () => {
       </div>
     );
   };
-  
 
   return (
-    
     <div style={styles.eventsContainer}>
       <h2 style={styles.sectionTitle}>Technical Events</h2>
       <div style={styles.eventsGrid}>
-        {technicalEvents.map((event, index) => (
-          <React.Fragment key={index}>{createEventCard(event)}</React.Fragment>
-        ))}
+        {technicalEvents.map((event) => createEventCard(event))}
       </div>
 
       <h2 style={styles.sectionTitle}>Non-Technical Events</h2>
       <div style={styles.eventsGrid}>
-        {nonTechnicalEvents.map((event, index) => (
-          <React.Fragment key={index}>{createEventCard(event)}</React.Fragment>
-        ))}
+        {nonTechnicalEvents.map((event) => createEventCard(event))}
       </div>
     </div>
   );
@@ -118,9 +108,6 @@ const styles = {
     gridTemplateColumns: "repeat(2, 1fr)",
     gap: "2rem",
     marginBottom: "4rem",
-    "@media (min-width: 768px)": {
-      gridTemplateColumns: "repeat(2, 1fr)",
-    },
   },
   videoBackground: {
     position: "absolute",
@@ -132,9 +119,7 @@ const styles = {
     borderRadius: "15px",
     zIndex: -1,
   },
-  
   eventCard: {
-    backgroundImage: "url('https://res.cloudinary.com/dgpoevb0p/image/upload/v1739604798/Rimberio_ag3ld3.png')",
     backgroundSize: "100% 100%",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
     backgroundBlendMode: "overlay",
@@ -151,21 +136,6 @@ const styles = {
       transform: "translateY(-30px)",
       boxShadow:
         "0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.3), 0 0 60px rgba(255, 255, 255, 0.2)",
-    },
-    "::before": {
-      content: '""',
-      position: "absolute",
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      background: "linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1))",
-      zIndex: 1,
-      transition: "opacity 0.3s ease",
-      opacity: 0,
-    },
-    ":hover::before": {
-      opacity: 1,
     },
   },
   eventContent: {
