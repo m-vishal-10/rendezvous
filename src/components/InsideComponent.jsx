@@ -1,78 +1,29 @@
 import React from "react";
-import "../InsidePage.css";
-// import Technical from './Technical.jpg'
+import EventInfoCard from "./EventInfoCard";
+
 const InsideComponent = () => {
   return (
-    <div className="event-container">
-      <div className="event-header">
-        {/* <h1 className="event-title">BGMI Tournament</h1> */}
-        <div className="flex justify-center items-center h-screen">
-          <h2 class="img-effect">
-          <a href="https://fontmeme.com/squid-game-font/"> 
-            <img
-              src="https://fontmeme.com/permalink/250215/69c3d65c4d96ffdb49ecefad86a33ec8.png"
-              alt="squid-game-font"
-              style={{ border: 0 }}
-            />
-          </a>
-          </h2>
-        </div>
-        <p className="event-description">
-          Enter the battlefield in this intense BGMI tournament where teams
-          compete for glory and survival. Test your skills, strategy, and
-          teamwork in this high-stakes competition.
-        </p>
-      </div>
-
-      <div className="cards-container">
-        {/* Event Details Card */}
-        <div className="card">
-          <h2 className="card-title">Event Details</h2>
-          <ul className="event-details">
-            <li>
-              <span className="highlight">Prelims:</span> 19th Feb (6pm - 9pm)
-            </li>
-            <li>
-              <span className="highlight">Finals:</span> 22nd Feb
-            </li>
-            <li>
-              <span className="highlight">Venue:</span> Computer Center
-            </li>
-            <li>
-              <span className="highlight">Team Size:</span> Two members per team
-            </li>
-          </ul>
-        </div>
-
-        {/* Image Card */}
-        <div className="card">
-          <h2 className="card-title">BGMI IMAGE</h2>
-          <img src="...." alt="BGMI Tournament" className="event-image" />
-        </div>
-
-        {/* Competition Rounds Card */}
-        <div className="card">
-          <h2 className="card-title">Competition Rounds</h2>
-          <ul className="competition-rules">
-            <li>
-              <span className="highlight">Round 1 - Online Prelims:</span> Duo
-              Classic on Erangel & Miramar
-            </li>
-            <li>
-              <span className="highlight">Platform:</span> Mobile only
-              (Android/iOS)
-            </li>
-            <li>No cheating, hacking, or third-party software allowed</li>
-            <li>
-              <span className="highlight">Round 2 - Finals (Offline):</span> TDM
-              Clash with 10 qualified teams
-            </li>
-            <li>Only M416 is allowed; no pistols, slides off</li>
-            <li>Fair play and adherence to BGMI's Terms of Service required</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <EventInfoCard
+      title="Paper Presentation"
+      image="/public/paperPresentation.png" // Replace with actual BGMI image URL
+      description="Showcase your research and innovation at the Paper Presentation Challenge! Present groundbreaking ideas, cutting-edge solutions, or revolutionary technologies to an esteemed panel of judges."
+      details={[
+        { label: "Prelims", value: "19th Feb (6pm - 9pm)" },
+        { label: "Finals", value: "22nd Feb" },
+        { label: "Venue", value: "Computer Center" },
+        { label: "Team Size", value: "Two members per team" },
+      ]}
+      competitionRounds={[
+        { label: "Round 1 - Abstract Submission", value: "" },
+        { label: "1", value: "Submit a 250–300-word abstract summarizing your research." },
+        { label: "2", value: "Evaluated on originality, clarity, and relevance." },
+        { label: "3", value: "All abstracts will be verified." },
+        { label: "Round 2 - Final Presentation", value: "" },
+        { label: "1", value: "10-minute presentation + 5-minute Q&A session." },
+        { label: "2", value: "Must cover problem statement, methodology, findings, and impact." },
+        { label: "3", value: "Use PowerPoint, visual aids, or demonstrations for clarity." },
+      ]}
+    />
   );
 };
 

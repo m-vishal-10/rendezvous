@@ -1,0 +1,4 @@
+1. Change HeroSection position ro relative
+2. remove zindex in countdown timer
+3. remove parent container in Themes
+4. remove zindex in Register

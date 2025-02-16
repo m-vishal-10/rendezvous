@@ -41,6 +41,7 @@ const styles = {
   container: {
     textAlign: "center",
     marginTop: "20px",
+    zIndex: "1", //CHANGED
   },
   timer: {
     fontSize: "36px",

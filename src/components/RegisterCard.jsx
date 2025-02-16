@@ -24,6 +24,7 @@ const styles = {
     maxWidth: "600px",
     margin: "50px auto",
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+    zIndex: "1", //CHANGED
   },
   title: {
     fontSize: "60px",

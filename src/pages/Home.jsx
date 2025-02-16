@@ -8,9 +8,10 @@ import HeroSection from '../components/HeroSection';
 const Home = () => {
   return (
     <>
+    
     <HeroSection />
+    <Welcome /> 
     <CountdownTimer />
-    <Welcome />
     <Themes />
     <RegisterCard />
     </>

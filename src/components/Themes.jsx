@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Events from "../pages/Events";
+
 const Themes = () => {
   const navigate = useNavigate();
+
   useEffect(() => {
     const cards = document.querySelectorAll(".event-card");
     cards.forEach((card, index) => {
@@ -15,16 +16,20 @@ const Themes = () => {
       }, index * 300);
     });
   }, []);
-  
+
   return (
+    <div style={styles.parentContainer}>
+      <h1 style={styles.title} className="glow">Themes</h1>
     <div style={styles.container}>
+      
       <div style={styles.cardContainer}>
+        {/* Technical Event Card */}
         <div style={styles.eventCard} className="event-card">
-          <img
-            src="/api/placeholder/400/300"
-            style={styles.cardImage}
-            alt="Technical events"
-          />
+          <video autoPlay loop muted style={styles.videoBackground}>
+            <source src="/public/tech.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div style={styles.overlay}></div>
           <div style={styles.cardBody}>
             <h3 style={styles.cardTitle}>Technical</h3>
             <p style={styles.cardText}>
@@ -37,11 +42,11 @@ const Themes = () => {
         </div>
 
         <div style={styles.eventCard} className="event-card">
-          <img
-            src="/api/placeholder/400/300"
-            style={styles.cardImage}
-            alt="Non-technical events"
-          />
+          <video autoPlay loop muted style={styles.videoBackground}>
+            <source src="/public/nonTech.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div style={styles.overlay}></div>
           <div style={styles.cardBody}>
             <h3 style={styles.cardTitle}>Non-Technical</h3>
             <p style={styles.cardText}>
@@ -54,15 +59,8 @@ const Themes = () => {
         </div>
       </div>
     </div>
+    </div>
   );
-};
-
-const showDetails = (eventType) => {
-  const messages = {
-    technical: "Welcome to the Technical Games. Do you accept the challenge?",
-    "non-technical": "Welcome to the Non-Technical Games. Are you ready to play?",
-  };
-  alert(messages[eventType]);
 };
 
 const styles = {
@@ -71,8 +69,6 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
-    backgroundColor: "#000",
-    padding: "20px",
   },
   cardContainer: {
     display: "flex",
@@ -81,24 +77,42 @@ const styles = {
     gap: "40px",
   },
   eventCard: {
+    position: "relative",
     background: "linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%)",
     border: "2px solid #fff",
     borderRadius: "15px",
-    transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
     overflow: "hidden",
     boxShadow: "0 0 10px rgb(255, 255, 255)",
     width: "500px",
     height: "400px",
     textAlign: "center",
     padding: "20px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
-  cardImage: {
+  videoBackground: {
+    position: "absolute",
+    top: 0,
+    left: 0,
     width: "100%",
-    height: "250px",
+    height: "100%",
     objectFit: "cover",
-    borderBottom: "2px solidrgb(255, 255, 255)",
+    zIndex: "-1",
+  },
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    background: "rgba(0, 0, 0, 0.5)", // Dark overlay for readability
+    zIndex: "0",
   },
   cardBody: {
+    position: "relative",
+    zIndex: "1", // Ensure text appears above the video
     padding: "20px",
   },
   cardTitle: {
@@ -122,10 +136,20 @@ const styles = {
     cursor: "pointer",
     borderRadius: "5px",
     transition: "background 0.3s",
-    zIndex: 10, // Ensure the button is on top of other elements
-    position: "relative", // Add position relative to ensure z-index works
-  }
-  ,
+    zIndex: "2",
+  },
+  title: {
+    fontSize: "60px",
+    fontWeight: "bold",
+    textAlign: "center",
+    textShadow: "0 0 10px rgb(255, 255, 255)",  
+    
+  },
+  parentContainer: {
+    textAlign: "center",
+    padding: "20px",
+    zIndex: "1", //CHANGED
+  },
 };
 
 export default Themes;

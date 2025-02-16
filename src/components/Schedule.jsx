@@ -46,7 +46,6 @@ const Schedule = () => {
 
 const styles = {
   container: {
-    backgroundColor: "black",
     color: "white",
     textAlign: "center",
     padding: "20px",

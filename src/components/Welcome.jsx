@@ -16,6 +16,7 @@ const styles = {
     textAlign: "center",
     color: "white",
     padding: "20px",
+    zIndex: "1", //CHANGED  
   },
   title: {
     fontSize: "80px",
