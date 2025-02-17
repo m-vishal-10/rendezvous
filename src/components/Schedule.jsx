@@ -12,7 +12,8 @@ const Schedule = () => {
       <div style={styles.infoBox}>
         <h2 style={styles.infoTitle}>About College</h2>
         <p style={styles.infoText}>
-        RMDEC aspires to be a premier institution offering quality technical education and research with application expertise in Engineering and Technology. Develop the students as outstanding professionals by creating an environment that would nurture creativity, academic excellence, professionalism, high standard of ethics, sense of responsibility and respect for individuals. Provides an efficient academic and research environment.
+        RMDEC aspires to be a premier institution offering quality technical education and research with application expertise in Engineering and Technology. Develop the students as outstanding professionals by creating an environment that would nurture creativity, academic excellence, professionalism, high standard of ethics, sense of responsibility and respect for individuals. Provides an efficient academic and research environment.Our mission is to inspire, educate, and produce computer engineers capable of tackling fundamental scientific problems and important societal challenges - and to do so with the highest commitment to quality, integrity, and respect for others. Our students are rigorously trained in fundamentals of engineering, with a strong bent towards the maker culture of learning and doing.
+
         </p>
         <button style={styles.button} onClick={() => handleRedirect("https://rmd.ac.in/index.html")}>Know More</button>
       </div>

@@ -12,7 +12,7 @@ const InsideComponent6 = () => {
     <EventInfoCard
         title="Squid Verse"
         image={SquidVerse} // Replace with actual BGMI image URL
-        description="Test your gaming knowledge and strategy by identifying characters from games, cartoons, and anime. Lead your Clash of Clans clan in battles, judged on attack execution and defense!"
+        description="In Squid Verse, participants face off in a series of brain-bending challenges combining general knowledge and computer science trivia. Inspired by the competitive and thrilling atmosphere of Squid Game"
         details={[
           { label: "Prelims", value: "19th Feb (6pm - 9pm)" },
           { label: "Finals", value: "22nd Feb" },
@@ -20,14 +20,14 @@ const InsideComponent6 = () => {
           { label: "Team Size", value: "Two members per team" },
         ]}
         competitionRounds={[
-          { label: "Round 1 - Character Hunt", value: "Gaming, Cartoon & Anime Edition" },
-          { label: "1", value: "Each participant gets 30-60 seconds to identify as many characters as possible." },
-          { label: "2", value: "The images will be randomly." },
-          { label: "3", value: "The top scorers will advance to the next round." },
-          { label: "Round 2 - Clash of Clans", value: "Clan Battle" },
-          { label: "1", value: "Participants must bring their own Clash of Clans clan." },
-          { label: "2", value: "Battles will be judged on attack strategies, base defense, and overall performance." },
-          { label: "3", value: "Friendly challenges and war tactics will determine the top players." },
+          { label: "Round 1 - Marble Minds", value: "General Knowledge and computer science trivia" },
+          { label: "1", value: "In a fast-paced quiz session, teams must answer correctly to steal marbles from their opponents. " },
+          { label: "2", value: "Every incorrect or unanswered question results in a loss of marble" },
+          { label: "3", value: "The top X% of teams move forward to the next round!" },
+          { label: "Round 2 - Quiz-Tac-Toe", value: "Shutdown" },
+          { label: "1", value: "XO Quiz Challenge is a unique blend of Tic-Tac-Toe and a rapid-response quiz." },
+          { label: "2", value: "fastest correct response earns the right to place a token (X or O) on the Tic-Tac-Toe grid. " },
+          { label: "3", value: "while the losing team hands over all their marbles to the winners." },
         ]} /></>
   );
 };
