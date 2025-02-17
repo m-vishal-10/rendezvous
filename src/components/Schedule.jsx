@@ -42,37 +42,37 @@ const Schedule = () => {
             <td style={styles.cell}>Battle of Coders</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
-            <td style={styles.cell}>--</td>
+            <td style={styles.cell}>CSE DEPARTMENT</td>
           </tr>
           <tr>
             <td style={styles.cell}>Paper Presentation</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
-            <td style={styles.cell}>--</td>
+            <td style={styles.cell}>CSE DEPARTMENT</td>
           </tr>
           <tr>
             <td style={styles.cell}>Shark Tank</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
-            <td style={styles.cell}>--</td>
+            <td style={styles.cell}>CSE DEPARTMENT</td>
           </tr>
           <tr>
             <td style={styles.cell}>Pixel Playground UI</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
-            <td style={styles.cell}>--</td>
+            <td style={styles.cell}>CSE DEPARTMENT</td>
           </tr>
           <tr>
             <td style={styles.cell}>IPL Auction</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
-            <td style={styles.cell}>--</td>
+            <td style={styles.cell}>CSE DEPARTMENT</td>
           </tr>
           <tr>
             <td style={styles.cell}>Squid Verse</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
-            <td style={styles.cell}>--</td>
+            <td style={styles.cell}>CSE DEPARTMENT</td>
           </tr>
         </tbody>
       </table>

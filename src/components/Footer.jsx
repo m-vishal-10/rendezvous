@@ -23,7 +23,8 @@ const Footer = () => {
             >
               <img src="/Instagram.png" alt="Instagram" style={styles.icon} />
             </a>
-            <p style={styles.text}>© 2025 RMD</p>
+            <p style={styles.text}>Email Id : rendezvous@rmd.ac.in</p>
+           
           </div>
 
           {/* Column 3: HOD & Faculty */}
