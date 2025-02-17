@@ -13,7 +13,7 @@ const Home = () => {
       {/* Video Section (Placed Above Background Video) */}
       <div style={styles.videoContainer}>
       <video autoPlay loop muted style={styles.video}>
-          <source src="/backnew1.mp4" type="video/mp4" />
+          <source src="/back.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -38,8 +38,9 @@ const styles = {
     marginBottom:"300px",
   },
   video: {
+    
     width: "100%", // Adjust width
-    maxHeight: "650px",
+    maxHeight: "600px",
     objectFit: "cover",
     borderRadius: "10px", // Optional rounded corners
   },
