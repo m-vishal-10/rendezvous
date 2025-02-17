@@ -118,11 +118,12 @@ const styles = {
   eventsContainer: {
     maxWidth: "1200px",
     margin: "0 auto",
-    padding: "2rem"
+    padding: "2rem",
+    position: "relative",
+    zIndex: 2,
   },
   sectionTitle: {
     fontFamily: "'Black Han Sans', sans-serif",
-    zIndex:-1,
     color: "#fff",
     fontSize: "3.5rem",
     textAlign: "center",
@@ -130,6 +131,8 @@ const styles = {
     margin: "2rem 0",
     textShadow: "0 0 20px rgba(255, 255, 255, 0.5)",
     letterSpacing: "4px",
+    zIndex: 3,
+    position: "relative",
   },
   eventsGrid: {
     display: "grid",
