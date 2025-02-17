@@ -1,10 +1,11 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
+import SharkTank from "../assets/sharkTank.png";
 const InsideComponent3 = () => {
   return (
     <EventInfoCard
       title="Shark Tank"
-      image="/public/sharkTank.png" // Replace with actual BGMI image URL
+      image={SharkTank}// Replace with actual BGMI image URL
       description="Shark Tank is a high-stakes event where participants pitch unique products to a panel of 'investors.' It tests quick thinking, creativity, and entrepreneurial flair."
       details={[
         { label: "Prelims", value: "19th Feb (6pm - 9pm)" },
