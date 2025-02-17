@@ -36,7 +36,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.7)", // Slight overlay for visibility
-    marginBottom:"150px",
+    marginBottom:"170px",
   },
   video: {
     width: "100%", // Adjust width
