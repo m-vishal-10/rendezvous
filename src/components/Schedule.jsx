@@ -89,7 +89,7 @@ const styles = {
   },
   infoBox: {
    
-    backgroundColor: "black",
+   
     padding: "30px",
     marginBottom: "20px",
     borderRadius: "15px",
