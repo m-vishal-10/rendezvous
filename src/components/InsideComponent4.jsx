@@ -1,6 +1,6 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
-import pixelPlayground from "../assets/pixelPlayground.png";  
+import pixelPlayground from "../assets/PixelPlayground.png";  
 const InsideComponent4 = () => {
   return (
     <EventInfoCard
