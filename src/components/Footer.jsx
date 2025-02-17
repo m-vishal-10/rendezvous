@@ -8,8 +8,8 @@ const Footer = () => {
           {/* Column 1: College Info */}
           <div>
             <h4 style={styles.heading}>RMD Engineering College</h4>
-            <p style={styles.text}>RMD College Rd, Kavaraipettai, Tamil Nadu 601206</p>
-            <p style={styles.text}>📞 +044-3330 3030</p>
+            <p style={styles.text}>RSM Nagar, Kavaraipettai, Tamil Nadu 601206</p>
+            <p style={styles.text}>📞 9710815558</p>
           </div>
 
           {/* Column 2: Social Media */}
@@ -28,7 +28,7 @@ const Footer = () => {
           {/* Column 3: HOD & Faculty */}
           <div>
             <h4 style={styles.heading}>Head of the Department - CSE</h4>
-            <p style={styles.text}>Dr.P. EZHUMALAI</p>
+            <p style={styles.text}>Dr.P.EZHUMALAI</p>
 
             <h4 style={styles.subheading}>Faculty Coordinators</h4>
             <p style={styles.text}>Dr.A. GNANASEKAR - 9884125520</p>
