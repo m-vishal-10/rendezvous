@@ -6,7 +6,7 @@ const Events = () => {
 
   const technicalEvents = [
     {
-      title: "Paper Presentation",
+      title: "Pper Presentation",
       description: "Showcase your research and innovation at the Paper Presentation Challenge! Present groundbreaking ideas, cutting-edge solutions, or revolutionary technologies to an esteemed panel of judges.",
       video: "/Paperpresentation.mp4", // Updated path
       navigatePath: "/inside"
