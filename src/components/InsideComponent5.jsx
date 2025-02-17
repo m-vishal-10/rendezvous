@@ -1,10 +1,11 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
+import IPL from "../assets/iplAuction.png";
 const InsideComponent5 = () => {
   return (
     <EventInfoCard
       title="IPL Auction"
-      image="/public/iplAuction.png" // Replace with actual BGMI image URL
+      image={IPL} // Replace with actual BGMI image URL
       description="Enter the IPL Mock Auction, where you bid on players, balance your budget, and outsmart rivals. Only the best strategist will emerge victorious!"
       details={[
         { label: "Prelims", value: "19th Feb (6pm - 9pm)" },

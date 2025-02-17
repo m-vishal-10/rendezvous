@@ -1,11 +1,11 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
-
+import PaperImage from "../assets/paperPresentation.png"
 const InsideComponent = () => {
   return (
     <EventInfoCard
       title="Paper Presentation"
-      image="/public/paperPresentation.png" // Replace with actual BGMI image URL
+      image={PaperImage} // Replace with actual BGMI image URL
       description="Showcase your research and innovation at the Paper Presentation Challenge! Present groundbreaking ideas, cutting-edge solutions, or revolutionary technologies to an esteemed panel of judges."
       details={[
         { label: "Prelims", value: "19th Feb (6pm - 9pm)" },
