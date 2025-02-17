@@ -96,7 +96,6 @@ const styles = {
     marginTop: "50px",
     marginLeft: "auto",
     marginRight: "auto",
-    
     border: "2px solid #fff",
     borderRadius: "15px",
     alignItems: "center",   // Centers text vertically
