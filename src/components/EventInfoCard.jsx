@@ -39,6 +39,8 @@ const EventInfoCard = ({ title, image, details, competitionRounds }) => {
       backgroundSize: "cover",
       backgroundPosition: "center",
       borderRadius: "15px",
+      height: "100%",
+      width:"100%"
     },
     listItem: {
       marginBottom: "1rem",

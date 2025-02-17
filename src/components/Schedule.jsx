@@ -15,7 +15,7 @@ const Schedule = () => {
         </thead>
         <tbody>
           <tr>
-            <td style={styles.cell}>Clash of Coders</td>
+            <td style={styles.cell}>Battle of Coders</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
