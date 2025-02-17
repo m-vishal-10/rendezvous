@@ -40,8 +40,8 @@ const Events = () => {
       navigatePath: "/inside5"
     },
     {
-      title: "Clash Of Clans",
-      description: "Test your gaming knowledge and strategy by identifying characters from games, cartoons, and anime. Lead your Clash of Clans clan in battles, judged on attack execution and defense!",
+      title: "Squid Verse",
+      description: "",
       video: "/Clash of Clans.mp4", // Updated path
       navigatePath: "/inside6"
     },
@@ -73,7 +73,16 @@ const Events = () => {
   };
 
   return (
+  <>
+  {/* Background Video */}
+  <div style={styles.heroContainer}>
+        <video autoPlay loop muted style={styles.heroVideo}>
+          <source src="/public/13138099_1920_1080_30fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+    </div>
     <div style={styles.eventsContainer}>
+      {/* Move Headers Above the Hero Video */}
       <h2 style={styles.sectionTitle}>Technical Events</h2>
       <div style={styles.eventsGrid}>
         {technicalEvents.map((event) => createEventCard(event))}
@@ -84,18 +93,36 @@ const Events = () => {
         {nonTechnicalEvents.map((event) => createEventCard(event))}
       </div>
     </div>
-  );
+  </>
+);
+
 };
 
 // Define all styles as a const object
 const styles = {
+  heroContainer: {
+    position: "fixed",
+    top: 0,
+    zIndex: 0,
+    height: "100%",
+    width: "100%",
+    display: "flex", // Assuming `items-center` refers to flex centering
+    alignItems: "center",
+    paddingLeft: "1.25rem", // px-5 (5 * 4px = 20px)
+    paddingRight: "1.25rem",
+    paddingTop: "6rem", // py-24 (24 * 4px = 96px)
+    paddingBottom: "6rem",
+    // background:
+    //   "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
+  },
   eventsContainer: {
     maxWidth: "1200px",
     margin: "0 auto",
-    padding: "2rem",
+    padding: "2rem"
   },
   sectionTitle: {
     fontFamily: "'Black Han Sans', sans-serif",
+    zIndex:-1,
     color: "#fff",
     fontSize: "3.5rem",
     textAlign: "center",
@@ -111,7 +138,7 @@ const styles = {
     marginBottom: "4rem",
   },
   videoBackground: {
-    position: "absolute",
+    position: "fixed",
     top: 0,
     left: 0,
     width: "100%",
@@ -131,6 +158,7 @@ const styles = {
     position: "relative",
     transformOrigin: "center",
     transform: "translateY(0)",
+  
     height: "400px",
     width: "100%",
     ":hover": {
