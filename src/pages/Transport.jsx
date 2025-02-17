@@ -8,7 +8,7 @@ const Transport = () => {
   return (
     <div style={{ textAlign: "center", color: "white", padding: "20px" }}>
       <h1>Get to know about the Transport!</h1>
-      <p>If it didn’t open, <a href="https://rmd.ac.in/rendezvous24/transport.html" target="_blank" rel="noopener noreferrer">click here</a>.</p>
+      <p>If it didn’t open, <a href="https://saankethika2k25.netlify.app/rmdbus.pdf" target="_blank" rel="noopener noreferrer">click here</a>.</p>
     </div>
     
   );

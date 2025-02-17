@@ -13,6 +13,7 @@ import InsideComponent4 from "./components/InsideComponent4";
 import InsideComponent5 from "./components/InsideComponent5";
 import InsideComponent6 from "./components/InsideComponent6";
 import Transport from "./pages/Transport";
+import Rules from "./pages/Rules";
 function App() {
   return (
     
@@ -26,6 +27,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/transport" element={<Transport/>} />
         <Route path="/events" element={<Events/>} />
+        <Route path="/rules" element={<Rules/>} />
         <Route path="/inside" element={<InsideComponent/>}/>
         <Route path="/inside2" element={<InsideComponent2/>}/>
         <Route path="/inside3" element={<InsideComponent3/>}/>
