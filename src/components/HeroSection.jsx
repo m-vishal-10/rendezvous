@@ -3,10 +3,10 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div style={styles.heroContainer}>
-        {/* <video autoPlay loop muted style={styles.heroVideo}>
+        <video autoPlay loop muted style={styles.heroVideo}>
           <source src="/public/13138099_1920_1080_30fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
     </div>
   );
 };
@@ -40,8 +40,8 @@ const styles = {
     paddingRight: "1.25rem",
     paddingTop: "6rem", // py-24 (24 * 4px = 96px)
     paddingBottom: "6rem",
-    background:
-      "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
+    // background:
+    //   "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
   },
   heroVideo: {
     width: "100%",
