@@ -40,8 +40,8 @@ const Events = () => {
       navigatePath: "/inside5"
     },
     {
-      title: "Clash Of Clans",
-      description: "Test your gaming knowledge and strategy by identifying characters from games, cartoons, and anime. Lead your Clash of Clans clan in battles, judged on attack execution and defense!",
+      title: "Squid Verse",
+      description: "",
       video: "/Clash of Clans.mp4", // Updated path
       navigatePath: "/inside6"
     },

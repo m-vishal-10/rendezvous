@@ -45,7 +45,7 @@ const Schedule = () => {
             <td style={styles.cell}>--</td>
           </tr>
           <tr>
-            <td style={styles.cell}>Clash of Clans</td>
+            <td style={styles.cell}>Squid Verse</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
             <td style={styles.cell}>--</td>
