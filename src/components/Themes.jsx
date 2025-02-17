@@ -25,7 +25,7 @@ const Themes = () => {
           {/* Technical Event Card */}
           <div style={styles.eventCard} className="event-card">
             <video autoPlay loop muted style={styles.videoBackground}>
-              <source src="/public/tech.mp4" type="video/mp4" />
+              <source src="/tech.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div style={styles.overlay}></div>
@@ -43,7 +43,7 @@ const Themes = () => {
           {/* Non-Technical Event Card */}
           <div style={styles.eventCard} className="event-card">
             <video autoPlay loop muted style={styles.videoBackground}>
-              <source src="/public/nonTech.mp4" type="video/mp4" />
+              <source src="/nonTech.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div style={styles.overlay}></div>
