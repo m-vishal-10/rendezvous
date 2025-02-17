@@ -73,7 +73,9 @@ const Events = () => {
   };
 
   return (
+  <>
     <div style={styles.eventsContainer}>
+      {/* Move Headers Above the Hero Video */}
       <h2 style={styles.sectionTitle}>Technical Events</h2>
       <div style={styles.eventsGrid}>
         {technicalEvents.map((event) => createEventCard(event))}
@@ -84,11 +86,36 @@ const Events = () => {
         {nonTechnicalEvents.map((event) => createEventCard(event))}
       </div>
     </div>
-  );
+
+    {/* Background Video */}
+    <div style={styles.heroContainer}>
+      <video autoPlay loop muted style={styles.videoBackground}>
+        <source src="/public/13138099_1920_1080_30fps.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </>
+);
+
 };
 
 // Define all styles as a const object
 const styles = {
+  heroContainer: {
+    position: "fixed",
+    top: 0,
+    zIndex: -1,
+    height: "100%",
+    width: "100%",
+    display: "flex", // Assuming `items-center` refers to flex centering
+    alignItems: "center",
+    paddingLeft: "1.25rem", // px-5 (5 * 4px = 20px)
+    paddingRight: "1.25rem",
+    paddingTop: "6rem", // py-24 (24 * 4px = 96px)
+    paddingBottom: "6rem",
+    // background:
+    //   "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
+  },
   eventsContainer: {
     maxWidth: "1200px",
     margin: "0 auto",
@@ -131,6 +158,7 @@ const styles = {
     position: "relative",
     transformOrigin: "center",
     transform: "translateY(0)",
+  
     height: "400px",
     width: "100%",
     ":hover": {
@@ -181,6 +209,14 @@ const styles = {
       boxShadow: "0 0 20px rgba(255, 255, 255, 0.5)",
       transform: "scale(1.05)",
     },
+  },
+  heroVideo: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    position: "absolute",
+    top: 0,
+    left: 0,
   },
 };
 
