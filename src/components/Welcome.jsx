@@ -16,18 +16,18 @@ const styles = {
     textAlign: "center",
     color: "white",
     padding: "20px",
-    zIndex: "1", //CHANGED  
+    zIndex: "1" //CHANGED  
   },
   title: {
     fontSize: "80px",
     fontWeight: "bold",
     textAlign: "center",
-    textShadow: "0 0 10px rgb(255, 255, 255)",  
+    textShadow: "0 0 10px rgb(255, 255, 255)"
   },
   description: {
     fontSize: "20px",
     maxWidth: "800px",
-    margin: "0 auto",
+    margin: "0 auto"
   },
 };
 

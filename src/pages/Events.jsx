@@ -8,26 +8,26 @@ const Events = () => {
     {
       title: "Paper Presentation",
       description: "Showcase your research and innovation at the Paper Presentation Challenge! Present groundbreaking ideas, cutting-edge solutions, or revolutionary technologies to an esteemed panel of judges.",
-      // video: "/Paperpresentation.mp4", // Updated path
-      navigatePath: "/inside",
+      video: "/Paperpresentation.mp4", // Updated path
+      navigatePath: "/inside"
     },
     {
       title: "Battle of Coders",
       description: "Battle it out in an intense coding competition where only the strongest algorithms survive.",
-      // video: "/battleofcoders.mp4", // Updated path
-      navigatePath: "/inside2",
+      video: "/battleofcoders.mp4", // Updated path
+      navigatePath: "/inside2"
     },
     {
       title: "Shark Tank",
       description: "Shark Tank is a high-stakes event where participants pitch unique products to a panel of 'investors.' It tests quick thinking, creativity, and entrepreneurial flair.",
-      // video: "/244006_medium.mp4", // Updated path
-      navigatePath: "/inside3",
+      video: "/244006_medium.mp4", // Updated path
+      navigatePath: "/inside3"
     },
     {
       title: "Pixel Playground (UI)",
       description: "Pixel Playground is a design competition challenging your skills in logo creation and UI/UX design. Test your creativity, problem-solving, and speed to create stunning visuals!",
-      // video: "/pixelplayground.mp4", // Updated path
-      navigatePath: "/inside4",
+      video: "/pixelplayground.mp4", // Updated path
+      navigatePath: "/inside4"
     },
   ];
 
@@ -35,14 +35,14 @@ const Events = () => {
     {
       title: "IPL Auction",
       description: "Enter the IPL Mock Auction, where you bid on players, balance your budget, and outsmart rivals. Only the best strategist will emerge victorious!",
-      // video: "/ipl.mp4", // Updated path
-      navigatePath: "/inside5",
+      video: "/ipl.mp4", // Updated path
+      navigatePath: "/inside5"
     },
     {
       title: "Clash Of Clans",
       description: "Test your gaming knowledge and strategy by identifying characters from games, cartoons, and anime. Lead your Clash of Clans clan in battles, judged on attack execution and defense!",
-      // video: "/Clash of Clans.mp4", // Updated path
-      navigatePath: "/inside6",
+      video: "/Clash of Clans.mp4", // Updated path
+      navigatePath: "/inside6"
     },
   ];
 
