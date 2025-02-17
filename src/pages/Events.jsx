@@ -74,6 +74,13 @@ const Events = () => {
 
   return (
   <>
+  {/* Background Video */}
+  <div style={styles.heroContainer}>
+        <video autoPlay loop muted style={styles.heroVideo}>
+          <source src="/public/13138099_1920_1080_30fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+    </div>
     <div style={styles.eventsContainer}>
       {/* Move Headers Above the Hero Video */}
       <h2 style={styles.sectionTitle}>Technical Events</h2>
@@ -86,14 +93,6 @@ const Events = () => {
         {nonTechnicalEvents.map((event) => createEventCard(event))}
       </div>
     </div>
-
-    {/* Background Video */}
-    <div style={styles.heroContainer}>
-      <video autoPlay loop muted style={styles.videoBackground}>
-        <source src="/public/13138099_1920_1080_30fps.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
   </>
 );
 
@@ -104,7 +103,7 @@ const styles = {
   heroContainer: {
     position: "fixed",
     top: 0,
-    zIndex: -1,
+    zIndex: 0,
     height: "100%",
     width: "100%",
     display: "flex", // Assuming `items-center` refers to flex centering
@@ -119,10 +118,11 @@ const styles = {
   eventsContainer: {
     maxWidth: "1200px",
     margin: "0 auto",
-    padding: "2rem",
+    padding: "2rem"
   },
   sectionTitle: {
     fontFamily: "'Black Han Sans', sans-serif",
+    zIndex:-1,
     color: "#fff",
     fontSize: "3.5rem",
     textAlign: "center",
@@ -138,7 +138,7 @@ const styles = {
     marginBottom: "4rem",
   },
   videoBackground: {
-    position: "absolute",
+    position: "fixed",
     top: 0,
     left: 0,
     width: "100%",
