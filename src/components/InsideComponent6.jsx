@@ -3,8 +3,8 @@ import EventInfoCard from "./EventInfoCard";
 const InsideComponent6 = () => {
   return (
     <EventInfoCard
-      title="Clash Of Clans"
-      image="/public/clashOfClans.png" // Replace with actual BGMI image URL
+      title="Squid Verse"
+      image="/public/squidverse.png" // Replace with actual BGMI image URL
       description="Test your gaming knowledge and strategy by identifying characters from games, cartoons, and anime. Lead your Clash of Clans clan in battles, judged on attack execution and defense!"
       details={[
         { label: "Prelims", value: "19th Feb (6pm - 9pm)" },

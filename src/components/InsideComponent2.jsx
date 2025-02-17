@@ -3,7 +3,7 @@ import EventInfoCard from "./EventInfoCard";
 const InsideComponent2 = () => {
   return (
     <EventInfoCard
-      title="Clash of Coders"
+      title="Battle of Coders"
       image="/public/battleOfCoders.png" // Replace with actual BGMI image URL
       description="Clash of Coders (COC) is a team-based coding event where pairs compete in a Quiz Round and a Coding Round. Teams showcase problem-solving skills to win certificates."
       details={[
