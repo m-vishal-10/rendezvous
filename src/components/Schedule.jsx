@@ -88,7 +88,7 @@ const styles = {
     padding: "30px",
   },
   infoBox: {
-    background: "linear-gradient(145deg,rgb(97, 97, 97,0.7) 0%,rgb(55, 55, 55,0.7) 100%)",
+    padding: "30px",
     marginBottom: "20px",
     borderRadius: "15px",
     width: "800px",
@@ -96,7 +96,9 @@ const styles = {
     marginTop: "50px",
     marginLeft: "auto",
     marginRight: "auto",
-    boxShadow: "0px 4px 8px rgb(255, 255, 255)",
+    
+    border: "2px solid #fff",
+    borderRadius: "15px",
     alignItems: "center",   // Centers text vertically
     justifyContent: "center", // Centers text horizontally
     textAlign: "center",
