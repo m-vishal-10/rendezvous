@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import '../Events.css';
 const Events = () => {
   const navigate = useNavigate();
-  
+
 
   const technicalEvents = [
     {
@@ -118,11 +118,12 @@ const styles = {
   eventsContainer: {
     maxWidth: "1200px",
     margin: "0 auto",
-    padding: "2rem"
+    padding: "2rem",
+    position: "relative",
+    zIndex: 2,
   },
   sectionTitle: {
     fontFamily: "'Black Han Sans', sans-serif",
-    zIndex:-1,
     color: "#fff",
     fontSize: "3.5rem",
     textAlign: "center",
@@ -130,6 +131,8 @@ const styles = {
     margin: "2rem 0",
     textShadow: "0 0 20px rgba(255, 255, 255, 0.5)",
     letterSpacing: "4px",
+    zIndex: 3,
+    position: "relative",
   },
   eventsGrid: {
     display: "grid",
@@ -209,6 +212,38 @@ const styles = {
       boxShadow: "0 0 20px rgba(255, 255, 255, 0.5)",
       transform: "scale(1.05)",
     },
+  },
+  
+  // heroContainer: {
+  //   position: "absolute",
+  //   top: 0,
+  //   zIndex: 1,
+  //   width: "100%",
+  //   height: "100%",
+  //   overflow: "hidden",
+  // },
+  // heroVideo: {
+  //   width: "100%",
+  //   height: "100%",
+  //   objectFit: "cover",
+  //   position: "absolute",
+  //   top: 0,
+  //   left: 0,
+  // },
+  heroContainer: {
+    position: "fixed",
+    top: 0,
+    zIndex: 0,
+    height: "100%",
+    width: "100%",
+    display: "flex", // Assuming `items-center` refers to flex centering
+    alignItems: "center",
+    paddingLeft: "1.25rem", // px-5 (5 * 4px = 20px)
+    paddingRight: "1.25rem",
+    paddingTop: "6rem", // py-24 (24 * 4px = 96px)
+    paddingBottom: "6rem",
+    // background:
+    //   "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
   },
   heroVideo: {
     width: "100%",

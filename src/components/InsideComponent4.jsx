@@ -1,10 +1,11 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
+import pixelPlayground from "../assets/pixelPlayground.png";  
 const InsideComponent4 = () => {
   return (
     <EventInfoCard
       title="Pixel Playground(UI)"
-      image="/public/pixelPlayground.png" // Replace with actual BGMI image URL
+      image={pixelPlayground} // Replace with actual BGMI image URL
       description="Pixel Playground is a design competition challenging your skills in logo creation and UI/UX design. Test your creativity, problem-solving, and speed to create stunning visuals!"
       details={[
         { label: "Prelims", value: "19th Feb (6pm - 9pm)" },
