@@ -31,6 +31,7 @@ const Header = () => {
           <span onClick={() => handleNavigation("/events")}>Events</span>
           <span onClick={() => handleNavigation("/about")}>About</span>
           <span onClick={() => handleNavigation("/register")}>Register</span>
+          <span onClick={() => handleNavigation("/transport")}>Transport</span>
         </nav>
 
         {/* Hamburger Menu (for Mobile) */}
@@ -42,6 +43,7 @@ const Header = () => {
           <span onClick={() => handleNavigation("/events")}>Events</span>
           <span onClick={() => handleNavigation("/about")}>About</span>
           <span onClick={() => handleNavigation("/register")}>Register</span>
+          <span onClick={() => handleNavigation("/transport")}>Transport</span>
         </div>
       </header>
 
