@@ -100,21 +100,21 @@ const Events = () => {
 
 // Define all styles as a const object
 const styles = {
-  heroContainer: {
-    position: "fixed",
-    top: 0,
-    zIndex: 0,
-    height: "100%",
-    width: "100%",
-    display: "flex", // Assuming `items-center` refers to flex centering
-    alignItems: "center",
-    paddingLeft: "1.25rem", // px-5 (5 * 4px = 20px)
-    paddingRight: "1.25rem",
-    paddingTop: "6rem", // py-24 (24 * 4px = 96px)
-    paddingBottom: "6rem",
-    // background:
-    //   "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
-  },
+  // heroContainer: {
+  //   position: "fixed",
+  //   top: 0,
+  //   zIndex: 0,
+  //   height: "100%",
+  //   width: "100%",
+  //   display: "flex", // Assuming `items-center` refers to flex centering
+  //   alignItems: "center",
+  //   paddingLeft: "1.25rem", // px-5 (5 * 4px = 20px)
+  //   paddingRight: "1.25rem",
+  //   paddingTop: "6rem", // py-24 (24 * 4px = 96px)
+  //   paddingBottom: "6rem",
+  //   // background:
+  //   //   "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
+  // },
   eventsContainer: {
     maxWidth: "1200px",
     margin: "0 auto",
