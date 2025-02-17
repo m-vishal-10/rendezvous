@@ -41,7 +41,7 @@ const Events = () => {
     },
     {
       title: "Squid Verse",
-      description: "",
+      description: "Enter the fun game where we will simulate the squid game, Play interesting events and win the contest to get amazing rewards",
       video: "/Clash of Clans.mp4", // Updated path
       navigatePath: "/inside6"
     },
