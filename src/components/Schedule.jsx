@@ -88,8 +88,7 @@ const styles = {
     padding: "20px",
   },
   infoBox: {
-    background: "linear-gradient(to bottom, rgba(9, 2, 3, 0.7), rgba(86, 0, 123, 0.7))",
-    backgroundColor: "black",
+    background: "linear-gradient(145deg,rgb(97, 97, 97,0.7) 0%,rgb(55, 55, 55,0.7) 100%)",
     padding: "30px",
     marginBottom: "20px",
     borderRadius: "15px",

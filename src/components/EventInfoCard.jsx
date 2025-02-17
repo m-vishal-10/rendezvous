@@ -26,7 +26,7 @@ const EventInfoCard = ({ title, image, details, competitionRounds }) => {
       marginTop: "3rem",
     },
     card: {
-      background: "linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%)",
+      background: "linear-gradient(145deg,rgb(97, 97, 97,0.7) 0%,rgb(55, 55, 55,0.7) 100%)",
       border: "2px solid #fff",
       borderRadius: "15px",
       padding: "2rem",
