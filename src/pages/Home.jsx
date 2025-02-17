@@ -13,11 +13,10 @@ const Home = () => {
       {/* Video Section (Placed Above Background Video) */}
       <div style={styles.videoContainer}>
       <video autoPlay loop muted style={styles.video}>
-          <source src="/rendezvous2k25.mp4" type="video/mp4" />
+          <source src="/backnew1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
-
       <Welcome /> 
       <CountdownTimer />
       <Themes />
@@ -28,19 +27,19 @@ const Home = () => {
 
 const styles = {
   videoContainer: {
-    position: "relative", // Keeps it on top
+    position: "relative", 
     zIndex: 10, // Higher than the background video in Welcome
     width: "100%",
-    height: "30%",
+    height: "20%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.7)", // Slight overlay for visibility
-    marginBottom:"170px",
+    marginBottom:"300px",
   },
   video: {
     width: "100%", // Adjust width
-    maxHeight: "500px",
+    maxHeight: "650px",
     objectFit: "cover",
     borderRadius: "10px", // Optional rounded corners
   },
