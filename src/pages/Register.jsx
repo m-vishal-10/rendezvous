@@ -12,7 +12,7 @@ const Register = () => {
         Your browser does not support the video tag.
       </video>
     </div>
-    <div style={{ textAlign: "center", color: "white", padding: "20px",marginBottom:"325px" }}>
+    <div style={{ textAlign: "center", color: "white", padding: "20px",marginBottom:"325px",margintop:"100px"}}>
         <h1>Registration Form Opened in a New Tab</h1>
         <p>If it didn’t open, <a href="https://forms.gle/ZocDn7UHb3veda6Q7" target="_blank" rel="noopener noreferrer">click here</a>.</p>
       </div></>
@@ -21,7 +21,7 @@ const Register = () => {
 const styles = {
   heroContainer: {
     position: "fixed",
-    top: 0,
+    top: 30,
     zIndex: -1,
     height: "100%",
     width: "100%",

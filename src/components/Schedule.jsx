@@ -85,11 +85,10 @@ const styles = {
   container: {
     color: "white",
     textAlign: "center",
-    padding: "20px",
+    padding: "30px",
   },
   infoBox: {
     background: "linear-gradient(145deg,rgb(97, 97, 97,0.7) 0%,rgb(55, 55, 55,0.7) 100%)",
-    padding: "30px",
     marginBottom: "20px",
     borderRadius: "15px",
     width: "800px",

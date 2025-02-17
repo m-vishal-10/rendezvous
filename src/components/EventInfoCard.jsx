@@ -50,6 +50,7 @@ const EventInfoCard = ({ title, image, details, competitionRounds }) => {
     highlight: {
       fontWeight: "bold",
     },
+    
   };
 
   return (

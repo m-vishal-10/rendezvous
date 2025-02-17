@@ -34,6 +34,7 @@ const InsideComponent = () => {
 
 const styles = {
   heroContainer: {
+
     position: "fixed",
     top: 0,
     zIndex: -1,
@@ -56,6 +57,7 @@ const styles = {
     top: 0,
     left: 0,
   },
+ 
 };
 
 export default InsideComponent;
