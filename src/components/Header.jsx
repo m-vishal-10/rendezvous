@@ -18,7 +18,11 @@ const Header = () => {
     <>
       <header className="header">
         {/* Logo */}
+        <div style={{ textAlign: "center" }}>
         <h1>R.M.D. Engineering College</h1>
+        <p>(An Autonomous Institution)</p>
+        </div>
+        
 
         {/* Desktop Navigation */}
         <nav className="nav-links">
