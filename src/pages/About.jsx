@@ -51,7 +51,7 @@ const styles = {
     color: "white",
     textAlign: "center",
     padding: "50px 0",
-    boxShadow: "0 0 10px rgb(255, 255, 255)",
+  
      // Adjust spacing if needed
   },
   scheduleContainer: {
@@ -59,7 +59,7 @@ const styles = {
     position: "relative",
     padding: "20px",
     borderRadius: "10px",
-    boxShadow: "0 0 10px rgb(255, 255, 255)",
+   
   },
   eventCard: {
     position: "relative",
