@@ -40,13 +40,7 @@ const styles = {
     paddingRight: "1.25rem",
     paddingTop: "6rem", // py-24 (24 * 4px = 96px)
     paddingBottom: "6rem",
-<<<<<<< Updated upstream
-    // background:
-    //   "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
-=======
-    background:
-      "/starBackground.mp4",
->>>>>>> Stashed changes
+
   },
   heroVideo: {
     width: "100%",

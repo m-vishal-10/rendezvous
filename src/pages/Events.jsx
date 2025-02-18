@@ -149,6 +149,7 @@ const styles = {
     objectFit: "cover",
     borderRadius: "15px",
     zIndex: -1,
+    opacity:"0.5",
   },
   eventCard: {
     backgroundSize: "100% 100%",
