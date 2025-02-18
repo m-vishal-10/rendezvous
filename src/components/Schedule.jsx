@@ -101,6 +101,7 @@ const styles = {
     alignItems: "center",   // Centers text vertically
     justifyContent: "center", // Centers text horizontally
     textAlign: "center",
+    boxShadow: "0 4px 30px rgb(255, 255, 255)", 
   },
   infoTitle: {
     fontSize: "22px",

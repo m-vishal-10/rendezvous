@@ -50,12 +50,46 @@ const styles = {
     zIndex: 2, // Ensures all content is above the video
     color: "white",
     textAlign: "center",
-    padding: "50px 0", // Adjust spacing if needed
+    padding: "50px 0",
+    boxShadow: "0 0 10px rgb(255, 255, 255)",
+     // Adjust spacing if needed
   },
   scheduleContainer: {
     zIndex: 3, // Ensures Schedule stays visible
     position: "relative",
     padding: "20px",
     borderRadius: "10px",
+    boxShadow: "0 0 10px rgb(255, 255, 255)",
+  },
+  eventCard: {
+    position: "relative",
+    background: "linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%)",
+    border: "2px solid #fff",
+    borderRadius: "15px",
+    overflow: "hidden",
+    boxShadow: "0 0 10px rgb(255, 255, 255)",
+    width: "500px", // Default width
+    height: "400px", // Default height
+    textAlign: "center",
+    padding: "20px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    // Responsive adjustments
+    "@media (max-width: 1200px)": {
+      width: "400px",
+      height: "350px",
+    },
+    "@media (max-width: 768px)": {
+      width: "90%", // Reduce width to 90% of the parent container
+      maxWidth: "400px", // Ensure it doesn't exceed 400px
+      height: "300px",
+    },
+    "@media (max-width: 480px)": {
+      width: "90%", // Reduce width to 90% of the parent container
+      maxWidth: "350px", // Ensure it doesn't exceed 350px
+      height: "250px",
+    },
   },
 };
