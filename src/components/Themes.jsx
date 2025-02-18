@@ -68,7 +68,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: "100vh",
+    minHeight: "70vh",
     padding: "20px",
   },
   cardContainer: {
@@ -194,8 +194,8 @@ const styles = {
     },
   },
   parentContainer: {
+    marginTop: "75px",
     textAlign: "center",
-    padding: "20px",
     zIndex: "1",
   },
 };

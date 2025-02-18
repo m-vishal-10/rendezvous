@@ -10,12 +10,13 @@ const Home = () => {
     <>
       <HeroSection />
 
-      {/* Video Section (Placed Above Background Video) */}
-      <div style={styles.videoContainer}>
-      <video autoPlay loop muted style={styles.video}>
-          <source src="/backnew.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      {/* Image Section (Replaced the Video with PNG Image) */}
+      <div style={styles.imageContainer}>
+        <img
+          src="/ren.png" // Replace with the path to your PNG image
+          alt="Background"
+          style={styles.image}
+        />
       </div>
       <Welcome /> 
       <CountdownTimer />
@@ -26,19 +27,23 @@ const Home = () => {
 };
 
 const styles = {
-  videoContainer: {
+  imageContainer: {
     position: "relative", 
-    zIndex: 10, // Higher than the background video in Welcome
+    zIndex: 10, // Higher than the background in Welcome
     width: "100%",
-    height: "30%",
+    height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.7)", // Slight overlay for visibility
+<<<<<<< HEAD
+    marginBottom: "300px",
+=======
     marginBottom:"300px",
+    marginTop:"40px",
+>>>>>>> 2ab000bfd48616bec94c3c56e1dddd225e7781d8
   },
-  video: {
-    
+  image: {
     width: "100%", // Adjust width
     maxHeight: "600px",
     objectFit: "cover",
