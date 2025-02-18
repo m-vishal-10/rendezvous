@@ -50,18 +50,20 @@ const Header = () => {
       <style>
         {`
           .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 30px;
-            background-color: transparent;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            box-sizing: border-box;
-          }
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 15px 30px;
+          background-color: rgba(90, 88, 88, 0.5); /* Black with 70% opacity */
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1000;
+          box-sizing: border-box;
+          backdrop-filter: blur(5px); /* Optional: Adds a subtle blur effect */
+}
+
 
           .logo {
             width: 250px;

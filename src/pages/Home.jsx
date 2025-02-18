@@ -30,12 +30,13 @@ const styles = {
     position: "relative", 
     zIndex: 10, // Higher than the background video in Welcome
     width: "100%",
-    height: "30%",
+    height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.7)", // Slight overlay for visibility
     marginBottom:"300px",
+    marginTop:"40px",
   },
   video: {
     
