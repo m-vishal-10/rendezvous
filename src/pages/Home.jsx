@@ -31,21 +31,29 @@ const styles = {
     position: "relative", 
     zIndex: 10, // Higher than the background in Welcome
     width: "100%",
+<<<<<<< HEAD
     height: "100%",
+=======
+    height: "200vh",
+>>>>>>> fa2dd544c7d1e078b64ab81995f691bbd4653c84
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.7)", // Slight overlay for visibility
+<<<<<<< HEAD
 <<<<<<< HEAD
     marginBottom: "300px",
 =======
     marginBottom:"300px",
     marginTop:"40px",
 >>>>>>> 2ab000bfd48616bec94c3c56e1dddd225e7781d8
+=======
+    marginBottom:"30vh",
+>>>>>>> fa2dd544c7d1e078b64ab81995f691bbd4653c84
   },
   image: {
     width: "100%", // Adjust width
-    maxHeight: "600px",
+    maxHeight: "90vh",
     objectFit: "cover",
     borderRadius: "10px", // Optional rounded corners
   },
