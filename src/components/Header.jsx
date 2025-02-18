@@ -17,18 +17,16 @@ const Header = () => {
   return (
     <>
       <header className="header">
-      <img
-          src="/RMDEC.png" // Replace with the path to your PNG image
-          alt="Background"
-          style={styles.image}
-        />
-        <div style={{ textAlign: "center" }}>
-        <h1>R.M.D. Engineering College</h1>
-        <p>(An Autonomous Institution)</p>
+        {/* Left Side: Logo & Text */}
+        <div className="left-section">
+          <img src="/RMDEC.png" alt="College Logo" className="logo" />
+          <div className="college-info">
+            <h1>R.M.D. Engineering College</h1>
+            <p>(An Autonomous Institution)</p>
+          </div>
         </div>
-        
 
-        {/* Desktop Navigation */}
+        {/* Right Side: Navigation Links */}
         <nav className="nav-links">
           <span onClick={() => handleNavigation("/home")}>Home</span>
           <span onClick={() => handleNavigation("/events")}>Events</span>
@@ -38,10 +36,10 @@ const Header = () => {
           <span onClick={() => handleNavigation("/rules")}>Rules</span>
         </nav>
 
-        {/* Hamburger Menu (for Mobile) */}
+        {/* Mobile Menu Icon */}
         <FaBars className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)} />
 
-        {/* Mobile Menu */}
+        {/* Mobile Navigation */}
         <div className={`mobile-nav ${menuOpen ? "open" : ""}`}>
           <span onClick={() => handleNavigation("/home")}>Home</span>
           <span onClick={() => handleNavigation("/events")}>Events</span>
@@ -54,40 +52,59 @@ const Header = () => {
 
       <div className="content-spacer"></div>
 
-      {/* CSS for responsiveness */}
       <style>
         {`
           .header {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 15px 30px;
-          background-color: rgba(90, 88, 88, 0.5); /* Black with 70% opacity */
-          position: fixed;
-          width: 100%;
-          top: 0;
-          left: 0;
-          z-index: 1000;
-          box-sizing: border-box;
-          backdrop-filter: blur(5px); /* Optional: Adds a subtle blur effect */
-}
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: rgba(90, 88, 88, 0.5);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+            backdrop-filter: blur(5px);
+          }
 
+          .left-section {
+            display: flex;
+            align-items: center;
+          }
 
           .logo {
-            width: 250px;
-            height: 50px;
-            cursor: pointer;
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+          }
+
+          .college-info h1 {
+            font-size: 20px;
+            margin: 0;
+            color: white;
+          }
+
+          .college-info p {
+            font-size: 14px;
+            margin: 0;
+            color: white;
+          }
+          .college-name {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
           }
 
           .nav-links {
             display: flex;
             gap: 20px;
-            white-space: nowrap;
           }
 
-          .nav-links span, 
-          .mobile-nav span {
-            color: #fff;
+          .nav-links span, .mobile-nav span {
+            color: white;
             text-decoration: none;
             font-size: 18px;
             font-weight: 500;
@@ -98,7 +115,7 @@ const Header = () => {
           .hamburger-menu {
             display: none;
             font-size: 28px;
-            color: #fff;
+            color: white;
             cursor: pointer;
           }
 
@@ -135,12 +152,5 @@ const Header = () => {
     </>
   );
 };
-
-const styles = {
-  image: {
-    width : "5%",
-    height: "5%",
-  },
-}
 
 export default Header;
