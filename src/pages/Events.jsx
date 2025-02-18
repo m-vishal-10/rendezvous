@@ -138,7 +138,7 @@ const styles = {
     display: "grid",
     gridTemplateColumns: "repeat(2, 1fr)",
     gap: "2rem",
-    marginBottom: "4rem",
+    marginBottom: "15rem",
   },
   videoBackground: {
     position: "fixed",
@@ -149,7 +149,7 @@ const styles = {
     objectFit: "cover",
     borderRadius: "15px",
     zIndex: -1,
-    opacity:"0.5",
+    opacity:"0.4",
   },
   eventCard: {
     backgroundSize: "100% 100%",

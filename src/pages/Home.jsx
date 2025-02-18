@@ -13,7 +13,7 @@ const Home = () => {
       {/* Image Section (Replaced the Video with PNG Image) */}
       <div style={styles.imageContainer}>
         <img
-          src="/squid1.png" // Replace with the path to your PNG image
+          src="/squid3.png" // Replace with the path to your PNG image
           alt="Background"
           style={styles.image}
         />
