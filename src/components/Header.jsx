@@ -17,7 +17,11 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        {/* Logo */}
+      <img
+          src="/RMDEC.png" // Replace with the path to your PNG image
+          alt="Background"
+          style={styles.image}
+        />
         <div style={{ textAlign: "center" }}>
         <h1>R.M.D. Engineering College</h1>
         <p>(An Autonomous Institution)</p>
@@ -131,5 +135,12 @@ const Header = () => {
     </>
   );
 };
+
+const styles = {
+  image: {
+    width : "5%",
+    height: "5%",
+  },
+}
 
 export default Header;

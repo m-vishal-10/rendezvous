@@ -10,7 +10,6 @@ const Home = () => {
     <>
       <HeroSection />
 
-      {/* Image Section (Replaced the Video with PNG Image) */}
       <div style={styles.imageContainer}>
         <img
           src="/squid3.png" // Replace with the path to your PNG image
