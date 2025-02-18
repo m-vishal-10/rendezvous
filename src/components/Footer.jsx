@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h4 style={styles.heading}>R.M.D. Engineering College</h4>
             <p style={styles.text}>RSM Nagar, Kavaraipettai, Tamil Nadu 601206</p>
-            <p style={styles.text}>📞 04467919191
+            <p style={styles.text}>📞 044-67919191
             extention:129</p>
           </div>
 
