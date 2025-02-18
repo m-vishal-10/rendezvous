@@ -30,18 +30,17 @@ const styles = {
     position: "relative", 
     zIndex: 10, // Higher than the background video in Welcome
     width: "100%",
-    height: "100%",
+    height: "200vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.7)", // Slight overlay for visibility
-    marginBottom:"300px",
-    marginTop:"40px",
+    marginBottom:"30vh",
   },
   video: {
     
     width: "100%", // Adjust width
-    maxHeight: "600px",
+    maxHeight: "90vh",
     objectFit: "cover",
     borderRadius: "10px", // Optional rounded corners
   },
