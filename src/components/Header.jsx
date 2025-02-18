@@ -18,12 +18,7 @@ const Header = () => {
     <>
       <header className="header">
         {/* Logo */}
-        <img
-          src="/logo3.png"
-          alt="logo"
-          className="logo"
-          onClick={() => handleNavigation("/home")}
-        />
+        <h1>R.M.D. Engineering College</h1>
 
         {/* Desktop Navigation */}
         <nav className="nav-links">

@@ -180,6 +180,7 @@ const styles = {
     },
   },
   title: {
+    marginTop:"30px",
     fontSize: "60px",
     fontWeight: "bold",
     textAlign: "center",

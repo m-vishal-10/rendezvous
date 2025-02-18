@@ -6,6 +6,7 @@ import Events from "./pages/Events";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./App.css";
+import ScrollToTop from "./ScrollToTop";
 import InsideComponent from "./components/InsideComponent";
 import InsideComponent2 from "./components/InsideComponent2";
 import InsideComponent3 from "./components/InsideComponent3";
@@ -20,6 +21,7 @@ function App() {
     <Router>
       
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/*" element={<Home />} />
         <Route path="/home" element={<Home />} />

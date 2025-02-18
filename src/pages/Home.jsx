@@ -13,7 +13,7 @@ const Home = () => {
       {/* Video Section (Placed Above Background Video) */}
       <div style={styles.videoContainer}>
       <video autoPlay loop muted style={styles.video}>
-          <source src="/back.mp4" type="video/mp4" />
+          <source src="/backnew.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -30,7 +30,7 @@ const styles = {
     position: "relative", 
     zIndex: 10, // Higher than the background video in Welcome
     width: "100%",
-    height: "20%",
+    height: "30%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

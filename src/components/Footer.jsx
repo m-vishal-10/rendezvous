@@ -7,7 +7,7 @@ const Footer = () => {
         <div style={styles.grid} className="grid">
           {/* Column 1: College Info */}
           <div>
-            <h4 style={styles.heading}>RMD Engineering College</h4>
+            <h4 style={styles.heading}>R.M.D. Engineering College</h4>
             <p style={styles.text}>RSM Nagar, Kavaraipettai, Tamil Nadu 601206</p>
             <p style={styles.text}>📞 04467919191
             extention:129</p>
