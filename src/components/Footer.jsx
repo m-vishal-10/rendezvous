@@ -95,7 +95,7 @@ const styles = {
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(4, 1fr)", // Default: 4 columns
-    gap: "20px",
+    gap: "60px",
     alignItems: "flex-start",
   },
   heading: {
