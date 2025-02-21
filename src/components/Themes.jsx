@@ -52,7 +52,7 @@ const Themes = () => {
               <p style={styles.cardText}>
                 Survive the games of strategy, culture, and creative challenges
               </p>
-              <button style={styles.button} onClick={() => navigate("/events")}>
+              <button style={styles.button} onClick={() => navigate("/events?section=non-technical")}>
                 Know More
               </button>
             </div>

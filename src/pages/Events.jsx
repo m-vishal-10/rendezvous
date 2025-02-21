@@ -1,8 +1,30 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import '../Events.css';
+
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { useRef } from "react";
+
 const Events = () => {
   const navigate = useNavigate();
+  const nonTechnicalRef = useRef(null);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    if (params.get("section") === "non-technical" && nonTechnicalRef.current) {
+      const navbarHeight = 175; // Adjust this based on your navbar height
+      const elementPosition = nonTechnicalRef.current.getBoundingClientRect().top + window.scrollY;
+      
+      window.scrollTo({
+        top: elementPosition - navbarHeight,
+        behavior: "smooth",
+      });
+    }
+  }, [location]);
 
 
   const technicalEvents = [
@@ -88,7 +110,7 @@ const Events = () => {
         {technicalEvents.map((event) => createEventCard(event))}
       </div>
 
-      <h2 style={styles.sectionTitle}>Non-Technical Events</h2>
+      <h2 style={styles.sectionTitle} ref={nonTechnicalRef}>Non-Technical Events</h2>
       <div style={styles.eventsGrid}>
         {nonTechnicalEvents.map((event) => createEventCard(event))}
       </div>
