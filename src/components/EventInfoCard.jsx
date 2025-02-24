@@ -1,17 +1,18 @@
 import React from "react";
 
 const EventInfoCard = ({ title, image, details, competitionRounds }) => {
+  // Added media query styles
   const styles = {
     container: {
       maxWidth: "1200px",
       margin: "0 auto",
-      padding: "2rem",
+      padding: "1rem",
       color: "#fff",
-      paddingBottom: "8rem",
+      paddingBottom: "4rem",
     },
     header: {
       textAlign: "center",
-      marginBottom: "3rem",
+      marginBottom: "2rem",
     },
     title: {
       fontSize: "2.5rem",
@@ -21,9 +22,9 @@ const EventInfoCard = ({ title, image, details, competitionRounds }) => {
     },
     cardsContainer: {
       display: "grid",
-      gridTemplateColumns: "repeat(3, 1fr)",
+      gridTemplateColumns: "1fr", // Default: 1 card per row
       gap: "2rem",
-      marginTop: "3rem",
+      marginTop: "2rem",
     },
     card: {
       border: "2px solid #fff",
@@ -33,35 +34,56 @@ const EventInfoCard = ({ title, image, details, competitionRounds }) => {
       height: "100%",
     },
     imageCard: {
-      
       backgroundImage: `url(${image})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       borderRadius: "15px",
-      height: "100%",
-      width:"100%"
+      height: "500px",
+      width: "100%",
     },
-    listItem: {
-      marginBottom: "1rem",
-      paddingLeft: "1.5rem",
-      position: "relative",
+    "@media (min-width: 768px)": {
+      cardsContainer: {
+        gridTemplateColumns: "repeat(2, 1fr)", // Large screens: 2 cards per row
+      },
     },
-    highlight: {
-      fontWeight: "bold",
-    },
-    
   };
+  
+
+  // Use React's useEffect to apply media queries
+  React.useEffect(() => {
+    const handleResize = () => {
+      const cardsContainer = document.getElementById('cardsContainer');
+      if (cardsContainer) {
+        if (window.innerWidth >= 768) {
+          // Desktop: 3 columns
+          cardsContainer.style.gridTemplateColumns = "repeat(3, 1fr)";
+        } else {
+          // Mobile: 1 column
+          cardsContainer.style.gridTemplateColumns = "1fr";
+        }
+      }
+    };
+
+    // Initial call
+    handleResize();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div style={styles.container}>
       <div style={styles.header}>
         <h1 style={styles.title}>{title}</h1>
       </div>
-      <div style={styles.cardsContainer}>
+      <div id="cardsContainer" style={styles.cardsContainer}>
         <div style={styles.card}>
           <h2>Event Details</h2>
           <ul>
-            <li><span>Yet to be anounced</span></li>
+            <li><span>Yet to be announced</span></li>
             {/* {details.map((item, index) => (
               <li key={index} style={styles.listItem}>
                 <span style={styles.highlight}>{item.label}:</span> {item.value}
