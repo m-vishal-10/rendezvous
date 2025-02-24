@@ -20,7 +20,7 @@ const styles = {
     zIndex: "1" //CHANGED  
   },
   title: {
-    fontSize: "70px",
+    fontSize: "60px",
     fontWeight: "bold",
     textAlign: "center",
     textShadow: "0 0 20px rgb(255, 255, 255)",
