@@ -1,17 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Events.css */
 
-body {
-    background-color: #000;
-    min-height: 100vh;
-    font-family: 'Arial', sans-serif;
+.events-container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem;
-}
-
-.section-title {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .section-title {
     font-family: 'Black Han Sans', sans-serif;
     color: #fff;
     font-size: 3.5rem;
@@ -20,33 +17,41 @@ body {
     margin: 2rem 0;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     letter-spacing: 4px;
-}
-
-.events-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.events-grid {
+    z-index: 3;
+    position: relative;
+  }
+  
+  /* Responsive grid - one column on mobile, two on larger screens */
+  .events-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Default: one card per row for mobile */
     gap: 2rem;
-    margin-bottom: 4rem;
-}
-
-@media (min-width: 768px) {
+    margin-bottom: 15rem;
+  }
+  
+  /* Two columns for screens larger than 768px */
+  @media (min-width: 768px) {
     .events-grid {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-}
-
-.event-card {
-    background-image:url("https://res.cloudinary.com/dgpoevb0p/image/upload/v1739604798/Rimberio_ag3ld3.png");
+  }
+  
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  .event-card {
     background-size: 100% 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
-    /* background: linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%); */
     border: 2px solid #fff;
     border-radius: 15px;
     overflow: hidden;
@@ -54,123 +59,86 @@ body {
     position: relative;
     transform-origin: center;
     transform: translateY(0);
-    height: 100%;
-    /* change is here for image */
+    height: 400px; /* Maintaining original height as requested */
     width: 100%;
-}
-
-.event-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1));
-    z-index: 1;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-}
-
-.event-card:hover {
+  }
+  
+  .event-card:hover {
     transform: translateY(-30px);
     box-shadow:
-        0 0 20px rgba(255, 255, 255, 0.4),
-        0 0 40px rgba(255, 255, 255, 0.3),
-        0 0 60px rgba(255, 255, 255, 0.2);
-}
-
-.event-card:hover::before {
-    opacity: 1;
-}
-
-/* .event-image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    object-fit: cover;
-    border-bottom: 2px solid #fff;
-    transition: transform 0.5s ease;
-    filter: grayscale(100%);
-} */
-
-.event-card:hover .event-image {
-    transform: scale(1.05);
-}
-
-.event-content {
+      0 0 20px rgba(255, 255, 255, 0.4),
+      0 0 40px rgba(255, 255, 255, 0.3),
+      0 0 60px rgba(255, 255, 255, 0.2);
+  }
+  
+  .event-content {
     padding: 1.5rem;
     text-align: center;
     transform: translateY(0);
     transition: transform 0.5s ease;
-}
-
-.event-card:hover .event-content {
+  }
+  
+  .event-content:hover {
     transform: translateY(-5px);
-}
-
-.event-title {
+  }
+  
+  .event-title {
     font-family: 'Black Han Sans', sans-serif;
     color: #fff;
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-.event-description {
+  }
+  
+  .event-description {
     color: #fff;
     margin-bottom: 1.5rem;
     font-size: 1rem;
     line-height: 1.5;
     opacity: 0.9;
-}
-
-.know-more-btn {
-    background: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 0.8rem 2rem;
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
+  }
+  
+  .event-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
     cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
     border-radius: 5px;
-}
-
-.know-more-btn:hover {
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    z-index: 15;
+    position: relative;
+    pointer-events: auto;
+  }
+  
+  .event-button:hover {
     background-color: #fff;
     color: #000;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     transform: scale(1.05);
-}
-
-.know-more-btn::before {
-    content: '○';
+  }
+  
+  .hero-container {
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    left: 10px;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.know-more-btn:hover::before {
-    opacity: 1;
-    left: 20px;
-}
-
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2.5rem;
-    }
-
-    .events-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .events-container {
-        padding: 1rem;
-    }
-}
+    top: 0;
+    left: 0;
+  }
