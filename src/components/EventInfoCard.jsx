@@ -31,7 +31,6 @@ const EventInfoCard = ({ title, image, details, competitionRounds }) => {
       borderRadius: "15px",
       padding: "2rem",
       transition: "all 0.3s ease-out",
-      height: "100%",
     },
     imageCard: {
       backgroundImage: `url(${image})`,
@@ -39,7 +38,6 @@ const EventInfoCard = ({ title, image, details, competitionRounds }) => {
       backgroundPosition: "center",
       borderRadius: "15px",
       height: "500px",
-      width: "100%",
     },
     "@media (min-width: 768px)": {
       cardsContainer: {

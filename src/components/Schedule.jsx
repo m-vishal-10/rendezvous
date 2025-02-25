@@ -90,10 +90,39 @@ const Schedule = () => {
       fontSize: isMobile ? "14px" : "16px",
       whiteSpace: isMobile ? "nowrap" : "normal",
     },
+    rulesList: {
+      listStyleType: "bullet",
+      padding: 0,
+      textAlign: "left",
+    },
+    ruleItem: {
+      padding: "8px 0",
+      borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+      position: "relative",
+      paddingLeft: "25px",
+    },
   };
 
   return (
     <div style={responsiveStyles.container}>
+
+      {/* About Rules */}
+      <div style={responsiveStyles.infoBox}>
+          <h2 style={responsiveStyles.infoTitle}>College Rules</h2>
+          <div style={{ display: "flex", justifyContent: "center", gap: "10px", padding: "15px" }}>
+            <ul style={responsiveStyles.rulesList}>
+              <li style={responsiveStyles.ruleItem}>ID card is mandatory for entry into the college.</li>
+              <li style={responsiveStyles.ruleItem}>Prior registration via google form is required to participate in any event.</li>
+              <li style={responsiveStyles.ruleItem}>No registration fees will be collected.</li>
+              <li style={responsiveStyles.ruleItem}>Participation certificate will be provided to all participants.</li>
+              <li style={responsiveStyles.ruleItem}>The winners will be rewarded with cash prize.</li>
+              <li style={responsiveStyles.ruleItem}>Mobile phones are not allowed inside the campus.</li> 
+              <li style={responsiveStyles.ruleItem}>Strict formal dress code must be followed.</li>
+              <li style={responsiveStyles.ruleItem}>Transport and food will be provided.</li>
+            </ul>
+        </div>
+      </div>
+
       {/* About College Section */}
       <div style={responsiveStyles.infoBox}>
         <h2 style={responsiveStyles.infoTitle}>About College</h2>

@@ -31,14 +31,12 @@ const styles = {
     zIndex: 10,
     width: "100%",
     height: "100%",
-    height: "200vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   },
   image: {
     width: "100%", // Adjust width
-    maxHeight: "90vh",
     objectFit: "cover",
     borderRadius: "10px", // Optional rounded corners
   },

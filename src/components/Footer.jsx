@@ -85,12 +85,13 @@ const styles = {
     padding: "20px 0",
     position: "relative",
     zIndex: 10,
+    padding: "20px",
   },
   container: {
-    width: "90%",
+    width: "100%",
     maxWidth: "1200px",
     margin: "0 auto",
-    padding: "10px",
+    overflowX: "hidden",
   },
   grid: {
     display: "grid",

@@ -17,10 +17,10 @@ const styles = {
     textAlign: "center",
     color: "white",
     padding: "40px",
-    zIndex: "1" //CHANGED  
+    zIndex: "1", //CHANGED  
   },
   title: {
-    fontSize: "60px",
+    fontSize: "40px",
     fontWeight: "bold",
     textAlign: "center",
     textShadow: "0 0 20px rgb(255, 255, 255)",

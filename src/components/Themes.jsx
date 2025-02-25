@@ -154,7 +154,6 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     minHeight: "70vh",
-    padding: "20px",
     width: "100%",
   },
   videoBackground: {
