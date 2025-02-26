@@ -1,6 +1,6 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
-import pixelPlayground from "../assets/PixelPlayGround.png";  
+import pixelPlayground from "../assets/pixel.jpg";  
 const InsideComponent4 = () => {
   return (
     <><div style={styles.heroContainer}>
