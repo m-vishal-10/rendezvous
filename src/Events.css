@@ -45,9 +45,12 @@
     object-fit: cover;
     border-radius: 15px;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.5;
   }
-  
+  .squid-verse-video {
+    opacity: 0.7; 
+  }
+
   .event-card {
     background-size: 100% 100%;
     background-color: rgba(0, 0, 0, 0.5);

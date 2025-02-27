@@ -42,7 +42,7 @@ const Events = () => {
     {
       title: "Squid Verse",
       description: "Enter the fun game where we will simulate the squid game, Play interesting events and win the contest to get amazing rewards",
-      video: "/Clash of Clans.mp4", // Updated path
+      video: "/squidverse.mp4", // Updated path
       navigatePath: "/inside6"
     },
   ];
@@ -55,7 +55,7 @@ const Events = () => {
           loop
           muted
           playsInline
-          className="video-background"
+          className={`video-background ${event.title === "Squid Verse" ? "squid-verse-video" : ""}`}
           aria-label={`Background video for ${event.title}`} // Fixed string interpolation
         >
           <source src={event.video} type="video/mp4" />
