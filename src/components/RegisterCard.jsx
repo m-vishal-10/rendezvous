@@ -7,7 +7,7 @@ const RegisterCard = () => {
     <div style={styles.container}>
       <h1 style={styles.title} className="glow">Register</h1>
       <p style={styles.description}>
-        Hurry up! Event closes on March 17th, 2025 at 12pm. Reserve your spot at the symposium! Register now.
+        Hurry up! Event closes on March 15th, 2025 at 12pm. Reserve your spot at the symposium! Register now.
       </p>
       <button style={styles.button} onClick={() => navigate("/register")}>Register Now</button>
     </div>
