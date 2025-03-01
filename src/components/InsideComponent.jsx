@@ -1,6 +1,6 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
-import PaperImage from "../assets/paperPresentation.png"
+import PaperImage from "../assets/3.png"
 const InsideComponent = () => {
   return (
     <><div style={styles.heroContainer}>

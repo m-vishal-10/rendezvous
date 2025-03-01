@@ -1,6 +1,6 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
-import IPL from "../assets/iplAuction.png";
+import IPL from "../assets/2.png";
 const InsideComponent5 = () => {
   return (
     <><div style={styles.heroContainer}>

@@ -1,6 +1,6 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
-import SharkTank from "../assets/sharkTank.png";
+import SharkTank from "../assets/4.png";
 const InsideComponent3 = () => {
   return (
     <><div style={styles.heroContainer}>

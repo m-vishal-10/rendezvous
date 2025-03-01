@@ -1,6 +1,6 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
-import BattleOfCoders from "../assets/battleOfCoders.png";
+import BattleOfCoders from "../assets/1.png";
 const InsideComponent2 = () => {
   return (
     <><div style={styles.heroContainer}>

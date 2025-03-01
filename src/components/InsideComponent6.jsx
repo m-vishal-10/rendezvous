@@ -1,6 +1,6 @@
 import React from "react";
 import EventInfoCard from "./EventInfoCard";
-import SquidVerse from "../assets/squidverse.png"
+import SquidVerse from "../assets/5.png"
 const InsideComponent6 = () => {
   return (
     <><div style={styles.heroContainer}>
