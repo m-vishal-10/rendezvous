@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const Register = () => {
   useEffect(() => {
-    window.open("https://forms.gle/ZocDn7UHb3veda6Q7", "_blank");
+    window.open("https://forms.gle/Q6oTkZNThz1BtNpNA", "_blank");
   }, []);
 
   return (
