@@ -14,7 +14,7 @@ const Register = () => {
     </div>
     <div style={{ textAlign: "center", color: "white", padding: "20px",marginBottom:"325px",margintop:"100px"}}>
         <h1>Registration Form Opened in a New Tab</h1>
-        <p>If it didn’t open, <a href="https://forms.gle/ZocDn7UHb3veda6Q7" target="_blank" rel="noopener noreferrer">click here</a>.</p>
+        <p>If it didn’t open, <a href="https://forms.gle/Q6oTkZNThz1BtNpNA" target="_blank" rel="noopener noreferrer">click here</a>.</p>
       </div></>
   );
 };
